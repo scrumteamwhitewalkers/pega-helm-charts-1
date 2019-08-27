@@ -1,6 +1,6 @@
 ---
 name: pega
-version: "1.0.2"
+version: "1.0.1"
 description: Pega installation on kubernetes
 keywords:
 - pega
