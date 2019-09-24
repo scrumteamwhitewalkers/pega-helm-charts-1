@@ -99,7 +99,7 @@ func TestInstallActionInstallerEnvironmentConfig(t *testing.T) {
 	helm.UnmarshalK8SYaml(t, installEnvConfig, &installEnvConfigMap)
 
 	installEnvConfigData := installEnvConfigMap.Data
-	require.Equal(t, installEnvConfigData["DB_TYPE"], "YOUR_DATABASE_TYPE1")
+	require.Equal(t, installEnvConfigData["DB_TYPE"], "YOUR_DATABASE_TYPE")
 	require.Equal(t, installEnvConfigData["JDBC_URL"], "YOUR_JDBC_URL")
 	require.Equal(t, installEnvConfigData["JDBC_CLASS"], "YOUR_JDBC_DRIVER_CLASS")
 	require.Equal(t, installEnvConfigData["JDBC_DRIVER_URI"], "YOUR_JDBC_DRIVER_URI")
