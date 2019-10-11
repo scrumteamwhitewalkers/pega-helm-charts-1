@@ -48,21 +48,7 @@ before_deploy:
 deploy:
   - provider: releases
     api_key:
-      secure: >
-        GuZqxcgBOueUOJWg6t5NaCTIssfkptgdAjwyWm/6SaVXqs9Kdgy
-        EawtYSu0WLh815qGmuxgVjMbvvkAvtbBXanKH+BheRl1cQjYnza
-        XJlL+Oa/xxzCqz1n4txqtDMR7l/loqrMTzCRe2bZ806z3+uXpXh
-        CO12+LwvMDJAAddDkX+2wRE240/1f/0lVlZ2lNzgBitC63jAf1H
-        ml3/KrgHsTYvNB5M6qKn8C24DcC6PMe012K3hL0O+F+er9Mb39R
-        FcSLTjF/6AiLvpK4oDAg8sBgciXVq0FPhCXvjbINGB/AY7jM5Ql
-        0A6ngngZjsjefn+NbtZ3aK230h2m0XM+dN7FJCbtRQeqvczcwRT
-        /wpDimpzFR0rf/NdXV4G+UZYI6a3bjqKYP5IPN8BbzVo8KzlbGW
-        JeJLV40gW7EbdyT57R2dNp46I17c1KL8atQH97n3yv9d9ZaC87O
-        6tOohLmue7L3lKxPDpY60VFna5BjJwvrhW4gvsd11Ko4c39FSu8
-        ogBSZ6E1EOlmVZDX+cBjuw4dGihcrHqWW5V3k2X/ksAKb+4A74g
-        AG8pCr/ifPEj9kTWb71IIF5RHkD6JqeGJdKaWFHDpWlYhKNTLRt
-        3gmcgdLmM5MN9A5khwBzPYiF5oaWT1COxh/Rjdz5V0+jUvyRvc9
-        a/rvc6hM6quXSmlAwA0U=
+      secure: P1fC0GErp+o5fgyofb3kxuJUjJG3zQm9a34N2CJS5Z3+JeC8vB0WAYCRKoCePZp5qE0fAF2gjgjiYswhnnJm3z9gOC/wdyWpxGaYd0iRJyeLOegeQg4s6j8Gj2cxdpdQiKBwr3+MRco7GGrDiETTO6229q6UQunN7T1wmAR7uRIYXL6iHSD/p7uZsyGN3RRilryog4K5mkP3+qegzTGTxFBBXq8RyxFXY6pgeRAP+6Pxi9pGbT7i+lB9hjeJ1Tw20LFNfoJF9DNVEblS/Mu5xM95m9IFXXJsHA3Sc/AU6YltjirjqHq48jnYfwyL1S2Tuqwigdj1pTmtdttT874i/1wSZai9JhilDgNGN/+XNPe4J6dpKndNJDDzIbEJW5LFRqcaYKWUPoX0pI+Aykh6g91Jyd8GPNUukEX1gnbfJJ2QCqPiPspiULkwBIJ569/AKkfrWbeJ73xhRdOL3tjG7DDJU78q5/1OzPcbT3/v5YGsfRKW85NsYyOBh2kKerGt2Sipww+kIiDzLqJY+DWEj31p6VCflYqUGO/GGGKOjEi3Wtg6T59mlFxjglDjvLzVUJwcKvK1+ZrIQpKV3Re3qoBhN19mXM13DDtSMWi7iuferYXsssuoETDS5fRoYAdcLiOrmmNfBDbf0GlolQf9N/7xcF+XV9uMtErV0Cqjx/c=
     file:
       - pega-kubernetes-example.tar.gz
       - pega-openshift-example.tar.gz
@@ -72,13 +58,13 @@ deploy:
       - pega-pivotal-pks-example.tar.gz
     skip_cleanup: true
     on:
-      repo: pegasystems/pega-helm-charts
+      repo: scrumteamwhitewalkers/pega-helm-charts-1
       tags: true
   - provider: bintray
     file: descriptor.json
-    user: bintrayautomation
+    user: kishorv
     key:
-      secure: k361CwNOJvRnIsM7HkHlXN/9tR+7Y9Y1caxrwC/sHXDFYd5ddD6YfYoZnfThUks+NY2PeZUQ8cPwXmSnEmj3i/HUV1sm9PFdSwlrII14JBZ6wocLNt7VzDsv7p3oQ+c+WomYqkS7/QXmJzotDfh4W/tlC3/5YiJMfR1SF25RaZz2cZNGdR3+u6VG1uQV8AfrseTBMjielsQajjmMeWYTUlPZvntYMTFAdbtVRUUvZWgya9ac/Jh6Tm+X0xHI97WO8u4js+btcoQJrlN7V7KXOtCaO8j+rpHOLSP3bZCAhIsGPcQAEk80FFVygtb/9C0RFJo/a4+Op4ZfDMJXuB401mnMdKhl73ygmEtELVXCh8shBbNuZykSLH+tmyLb1+Cl8WU3fXZqoKeia0S4dig5L+7gQlIgYIQsk0q4nglCSjQaCCH/uyY37WNXCRPpbCR74NYzXHfJewk5cB9dtYIZe4GCOTcXHP/UOQiGTCScwXgT/rSIxzAK8NxL14G5U1B6d9nBJe9b4Pml4S9TG6RWDRGXlEDj3XXSEBm/QMGq92U0dxIovoLY6Psbuo5KiYb0JFbuwqSLm2HLmaxJjtfGJmJc8fasU8+lvBX9R+fzcbT0Rzg//Tx7/7pssw8JFrArcZNEHG6xU1/8QuE34+0XIogCvb4hHlTZmMLFBfFhBtk=
+      secure: ux+xzwMHu1B3ORU+wXBMPahZf6/WRYDSN4cCkpPMAiW9Sems8QbYJJOJ5HftCOcIy7IahTC5rCAe3fXw0vWFV3vfq6SudVcKcJfbu0EZMvnjETAGShkl9d1/HuxC56lKILH25hoIPu58w5AaGD3zxgBMDlgdwgX84z+wVIxfS99UzdApGeVOy3Tz8h4FZPo3kpjvl8+YVl+masan8su8zxcxHb6arT3HSPnKGUqVzY4dlWUckKlcYmVe/S8yJ0djM3Sg+m7Hcn9cYYm2tNcDzPZpaCnHM7Yf4UHOZc+NBiJ6520iZJatMT7Zgp0o5N0Tz6EGbChzqMSz1DCpZ5H26GZB7IvW7dsrwZnd3PPn2YzKpuhzH3isFTvU62Q/Spp5KsQktCPZYrkVonh7AVJCiz2t+AaPwzSOpdW+B3Ff0lhZfDCMZm26cO+cw+bcEN9yLS8T6AeJjUrgjn/6mhGxAb/PdulpVN0i9EHKGesfm9f2rqjgBN/G1pTCIVy4JfKn3sNRkb1yzw0RySRW866Nd77cV3BXLNW5FHtskNk6S0o+Nk4lthBbiFB5+y1W8zyxgDpufpfsaX8onjG4z+OYl6YRxf6SAjefsbd1889UOL4Qay6aZPBqLaMpbjRPRSSxq+5ds2TvUjkbVdUNO+8Ec5XZZVgphQdO+qi/HVaNXIg=
     skip_cleanup: true
     on:
       all_branches: true

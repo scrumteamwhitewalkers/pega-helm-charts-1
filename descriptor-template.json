@@ -3,7 +3,7 @@
         "name": "pega-helm-charts",
         "repo": "pega-helm-charts",
         "subject": "pegasystems",
-        "vcs_url": "https://github.com/pegasystems/pega-helm-charts",
+        "vcs_url": "https://github.com/scrumteamwhitewalkers/pega-helm-charts-1",
         "licenses": ["Apache License 2.0"]
     },
 
