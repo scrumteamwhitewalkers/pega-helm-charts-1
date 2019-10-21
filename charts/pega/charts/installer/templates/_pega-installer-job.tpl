@@ -54,6 +54,14 @@ spec:
         - configMapRef:
             name: {{ template "pegaUpgradeEnvironmentConfig" }}
 {{- end }}
+        resources:
+          # Maximum CPU and Memory that the containers for {{ .name }} can use
+          limits:
+            cpu: 2
+            memory: "8Gi"
+          requests:
+            cpu: 200m
+            memory: "6Gi"
 {{- if (eq $arg "install") }}
         envFrom:
         - configMapRef:
